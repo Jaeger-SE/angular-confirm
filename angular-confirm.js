@@ -5,6 +5,8 @@
     function confirmPopup() {
         function closePopup(body) {
             body.find("#popover-overlay").remove();
+            console.log("close");
+            console.log(body);
         }
 
         return {
@@ -103,17 +105,70 @@
 
                     var title = angular.element('<h3 class="popover-title">Are you sure?</h3>');
                     title.css({
-                        "margin": "0 !important",
-                        "padding": "8px 14px",
-                        "background-color": "#f7f7f7",
-                        "border-bottom": "1px solid #ebebeb",
-                        "border-radius": "5px 5px 0 0"
+                        "background-color": "rgb(247, 247, 247)",
+                        "border-bottom-color": "rgb(235, 235, 235)",
+                        "border-bottom-left-radius": "0px",
+                        "border-bottom-right-radius": "0px",
+                        "border-bottom-style": "solid",
+                        "border-bottom-width": "1px",
+                        "border-top-left-radius": "5px",
+                        "border-top-right-radius": "5px",
+                        "box-sizing": "border-box",
+                        "color": "rgb(51, 51, 51)",
+                        "direction": "ltr",
+                        "display": "block",
+                        "font-family": "'Open Sans', sans-serif",
+                        "font-size": "14px",
+                        "font-style": "normal",
+                        "font-weight": "300",
+                        "height": "32px",
+                        "letter-spacing": "normal",
+                        "line-height": "15.4px",
+                        "margin-bottom": "0px",
+                        "margin-left": "0px",
+                        "margin-right": "0px",
+                        "margin-top": "0px",
+                        "padding-bottom": "8px",
+                        "padding-left": "14px",
+                        "padding-right": "14px",
+                        "padding-top": "8px",
+                        "text-align": "start",
+                        "text-shadow": "none",
+                        "text-transform": "none",
+                        "white-space": "normal",
+                        "width": "201px",
+                        "word-spacing": "0px",
+                        "word-wrap": "normal"
                     });
 
                     var content = angular.element('<div class="popover-content"></div>');
                     content.css({
-                        "padding": "9px 14px",
-                        "border-radius": 0
+                        "border-bottom-left-radius": "0px",
+                        "border-bottom-right-radius": "0px",
+                        "border-top-left-radius": "0px",
+                        "border-top-right-radius": "0px",
+                        "box-sizing": "border-box",
+                        "color": "rgb(51, 51, 51)",
+                        "direction": "ltr",
+                        "display": "block",
+                        "font-family": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+                        "font-size": "14px",
+                        "font-style": "normal",
+                        "font-weight": "normal",
+                        "height": "48px",
+                        "letter-spacing": "normal",
+                        "line-height": "20px",
+                        "padding-bottom": "9px",
+                        "padding-left": "14px",
+                        "padding-right": "14px",
+                        "padding-top": "9px",
+                        "text-align": "start",
+                        "text-shadow": "none",
+                        "text-transform": "none",
+                        "white-space": "normal",
+                        "width": "201px",
+                        "word-spacing": "0px",
+                        "word-wrap": "normal"
                     });
 
                     var confirmButton = angular.element('<a><i class="glyphicon glyphicon-ok"></i>&nbsp;Confirm</a>');

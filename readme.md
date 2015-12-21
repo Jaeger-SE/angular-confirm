@@ -9,3 +9,6 @@ data-confirm-popup data-on-confirmed-action
 	<span><i class="fa fa-times"></i></span>
 </button>
 ```
+
+# Plnkr
+http://plnkr.co/edit/Z3NluO
