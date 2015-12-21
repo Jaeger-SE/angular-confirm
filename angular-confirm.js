@@ -276,5 +276,5 @@
         module = angular.module("kass-ui", []);
     }
 
-    module.directive("confirm-popup", confirmPopup);
+    module.directive("confirmPopup", confirmPopup);
 })();
