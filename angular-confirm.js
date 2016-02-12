@@ -5,8 +5,6 @@
     function confirmPopup() {
         function closePopup(body) {
             body.find("#popover-overlay").remove();
-            console.log("close");
-            console.log(body);
         }
 
         return {
